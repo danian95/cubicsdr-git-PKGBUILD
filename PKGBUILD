@@ -12,12 +12,13 @@ arch=('i686' 'x86_64')
 url="https://github.com/cjcliffe/CubicSDR"
 license=('GPL')
 depends=(
-	'fftw'
+	'libpulse'
 	'wxgtk'
 	'soapysdr'
 	'liquid-dsp-git'
 	)
 optdepends=(
+	'fftw: FFTW support'
 	'soapyrtlsdr-git: RTL-SDR dongle support'
   	'soapyremote-git: remote SDR support'
 	'hamlib: hamlib support'
