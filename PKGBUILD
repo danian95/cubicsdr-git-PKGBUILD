@@ -6,7 +6,6 @@ pkgname=cubicsdr-git
 _pkgname=cubicsdr
 pkgver=r1145.cf90a82
 pkgrel=2
-epoch=2
 pkgdesc="Cross-Platform Software-Defined Radio Application"
 arch=('i686' 'x86_64')
 url="https://github.com/cjcliffe/CubicSDR"
