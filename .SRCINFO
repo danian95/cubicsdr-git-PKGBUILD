@@ -2,6 +2,7 @@ pkgbase = cubicsdr-git
 	pkgdesc = Cross-Platform Software-Defined Radio Application
 	pkgver = r1145.cf90a82
 	pkgrel = 2
+	epoch = 2
 	url = https://github.com/cjcliffe/CubicSDR
 	install = cubicsdr-git.install
 	arch = i686
