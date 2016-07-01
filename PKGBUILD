@@ -53,11 +53,14 @@ build() {
 		msg2 "hamlib not found"
 	fi
 
-	cmake ../ -DCMAKE_BUILD_TYPE=Release -DwxWidgets_CONFIG_EXECUTABLE=$(which wx-config) $_hamlib
+	cmake ../ -DCMAKE_INSTALL_PREFIX:PATH=/usr \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DwxWidgets_CONFIG_EXECUTABLE=$(which wx-config) \
+		$_hamlib
 	make
 }
 
 package() {
 	cd "${srcdir}/${pkgname}/build"
-	make DESTDIR=${pkgdir} install
+	make DESTDIR="${pkgdir}" install
 }
